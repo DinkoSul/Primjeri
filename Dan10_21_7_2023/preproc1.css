@@ -1,1 +1,35 @@
-/*# sourceMappingURL=preproc1.css.map */
+body {
+  color: #833;
+}
+
+header {
+  text-align: center;
+}
+header p {
+  font-size: 18px;
+}
+header h1 {
+  color: aqua;
+}
+header a {
+  color: chocolate;
+}
+
+section h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+section p {
+  text-align: justify;
+}
+section a {
+  color: #833;
+}
+section article {
+  background-color: #833;
+}
+section article p {
+  color: #eee;
+}
+section article a {
+  color: #eee;
+}/*# sourceMappingURL=preproc1.css.map */
