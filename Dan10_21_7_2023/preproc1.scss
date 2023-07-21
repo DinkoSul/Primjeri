@@ -1,0 +1,43 @@
+$red: #833;
+$pozadinaArticle: #eee;
+
+body {
+  color: $red;
+}
+
+header {
+  text-align: center;
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    color: aqua;
+  }
+  a {
+    color: chocolate;
+  }
+}
+
+section {
+  h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  p {
+    text-align: justify;
+  }
+  a {
+    color: $red;
+  }
+
+  article {
+    background-color: $red;
+    p {
+      color: $pozadinaArticle;
+    }
+    a {
+      color: $pozadinaArticle;
+    }
+  }
+}
+
+// DZ: Oblikovati elemente Footera na isti način
