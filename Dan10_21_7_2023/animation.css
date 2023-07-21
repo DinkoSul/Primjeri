@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+div {
+  background-color: #f93;
+  border: 1px solid #333;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 2em 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+}
+
+@keyframes animacija1 {
+  0% {
+    left: 0px;
+    background: red;
+  }
+  100% {
+    left: 500px;
+    background: yellow;
+  }
+}
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode play-state */
+div:first-of-type {
+  animation: animacija1 3s linear;
+}
