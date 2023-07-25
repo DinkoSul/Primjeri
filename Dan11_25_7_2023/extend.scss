@@ -1,0 +1,24 @@
+.borders {
+  border: 2px solid #800;
+}
+$spaces: "nije isto kao i %spaces";
+
+%spaces {
+  padding: 1em;
+  margin: 1em;
+}
+
+header,
+footer,
+article {
+  @extend .borders;
+
+  //   border: 2px solid #800;
+  @extend %spaces;
+  //     padding: 1em;
+  //   margin: 1em;
+}
+
+p {
+  @extend %spaces;
+}
