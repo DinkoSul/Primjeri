@@ -1,34 +1,23 @@
-@mixin flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@mixin spacing($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
 }
 
-@mixin a-button {
+@mixin linx($link, $visit, $hover, $active) {
   a {
-    background-color: $boja2;
-    color: $boja1;
-    padding: 10px;
-    margin: 1em;
+    @include spacing(0, 5px 2em);
+    color: $link;
+    font-weight: bold;
+    text-decoration: none;
+
     &:visited {
-      // a:visited
-      background-color: aqua;
+      color: $visit;
     }
     &:hover {
-      // a:hover
-      background-color: $boja3;
+      color: $hover;
+    }
+    &:active {
+      color: $active;
     }
   }
-  p {
-    background-color: $boja3;
-  }
-}
-//mixin s argumentima
-@mixin align-element($display, $txt, $space) {
-  display: $display;
-  margin: $space;
-  text-align: $txt;
-  //     display: block;
-  //   margin: 1em auto;
-  //   text-align: center;
 }
